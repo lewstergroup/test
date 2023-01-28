@@ -14,10 +14,10 @@ def add_http(lists):
 try:
   urls = input("\033[93m[+] Target : \033[0m")
   Thread = input("\033[93m[+] Thread : ")
-		pool = ThreadPool(int(Thread))
-		pool.map(send_request, webs)
-		pool.close()
-		pool.join()
+  pool = ThreadPool(int(Thread))
+  pool.map(send_request, webs)
+  pool.close()
+  pool.join()
 except KeyboardInterrupt:
     print("\n\033[95m[-] Canceled !.\033[0m")
     exit()
