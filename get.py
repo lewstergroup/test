@@ -13,7 +13,7 @@ def add_http(lists):
     return lists
 try:
   urls = input("\033[93m[+] Target : \033[0m")
-  power = int(input("\033[93m[+] Target : \033[0m"))
+  power = int(input("\033[93m[+] Thread : \033[0m"))
 except KeyboardInterrupt:
     print("\n\033[95m[-] Canceled !.\033[0m")
     exit()
