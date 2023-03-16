@@ -1,1 +1,3 @@
-<a href="https://aji.co.id/img/slot-gacor/" style="display: none;">https://aji.co.id/img/slot-gacor/</a>
+<div style="display:none;">
+<a href="https://aji.co.id/img/slot-gacor/">https://aji.co.id/img/slot-gacor/</a>
+</div>
